@@ -24,9 +24,7 @@ def main():
     if not os.path.exists(examples_dir):
         os.makedirs(examples_dir)
         
-        # Add example images to the directory
-        # Assuming image1.jpg, image2.jpg, and image3.jpg are in the current directory
-        example_images = ["image1.jpg", "image2.jpg", "image3.jpg"]
+        example_images = ["image1jpg", "image.jpg", "image3.jpg"]
         for img in example_images:
             if os.path.exists(img):
                 shutil.copy(img, os.path.join(examples_dir, img))
@@ -125,5 +123,14 @@ def process_image(image_path, img_colorization):
     except Exception as e:
         st.error(f"Error during colorization: {e}")
 
+
 if __name__ == "__main__":
     main()
+
+st.markdown("---")
+st.markdown("""
+    <div style="text-align: center; padding: 10px; background-color: #f0f2f6; border-radius: 5px;">
+        <p>Developed by <a href="https://www.linkedin.com/in/muhammad-noman76/" target="_blank">Muhammad Noman</a> | 
+        Contact: muhammadnomanshafiq76@gmail.com</p>
+    </div>
+""", unsafe_allow_html=True)
