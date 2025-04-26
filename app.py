@@ -24,7 +24,7 @@ def main():
     if not os.path.exists(examples_dir):
         os.makedirs(examples_dir)
         
-        example_images = ["image1jpg", "image.jpg", "image3.jpg"]
+        example_images = ["image1.jpg", "image2.jpg", "image3.jpg"]
         for img in example_images:
             if os.path.exists(img):
                 shutil.copy(img, os.path.join(examples_dir, img))
