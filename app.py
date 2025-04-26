@@ -1,3 +1,13 @@
+# must come before any st.* calls
+from streamlit.web.server.health import HealthHandler
+
+def patched_get(self):
+    # force a JSON response
+    self.write({"status": "ok"})
+
+HealthHandler.get = patched_get
+
+
 import streamlit as st
 import cv2
 import numpy as np
