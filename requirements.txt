@@ -1,0 +1,8 @@
+timm
+streamlit>=1.24.0
+opencv-python>=4.7.0
+modelscope==1.12.0
+datasets==2.14.7
+pillow>=9.5.0
+numpy>=1.24.0
+huggingface-hub>=0.16.4
