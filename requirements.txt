@@ -1,5 +1,6 @@
 timm
-streamlit>=1.24.0
+gradio
+gradio_imageslider
 opencv-python>=4.7.0
 modelscope==1.12.0
 datasets==2.14.7
